@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xamluoccampuchia</title>
+  </head>
+  <body>
+    <p>
+    ▒▒▒▒▒▄██████████▄▒▒▒▒▒
+    ▒▒▒▄██████████████▄▒▒▒
+    ▒▒██████████████████▒▒
+    ▒▐███▀▀▀▀▀██▀▀▀▀▀███▌▒
+    ▒███▒▒▌■▐▒▒▒▒▌■▐▒▒███▒
+    ▒▐██▄▒▀▀▀▒▒▒▒▀▀▀▒▄██▌▒
+    ▒▒▀████▒▄▄▒▒▄▄▒████▀▒▒
+    ▒▒▐███▒▒▒▀▒▒▀▒▒▒███▌▒▒
+    ▒▒███▒▒▒▒▒▒▒▒▒▒▒▒███▒▒
+    ▒▒▒██▒▒▀▀▀▀▀▀▀▀▒▒██▒▒▒
+    ▒▒▒▐██▄▒▒▒▒▒▒▒▒▄██▌▒▒▒
+    ▒▒▒▒▀████████████▀▒▒▒▒
+    </p>
+
+
+    <script>
+      let n;
+      do {
+        n = Number(prompt("Nhập một số nguyên dương n:"));
+      } while (n <= 0 || !Number.isInteger(n));
+      let tongChan = 0;
+      let tongLe = 0;
+
+      for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+          tongChan += i;
+        } else {
+          tongLe += i;
+        }
+      }
+
+      console.log("Tổng các số chẵn từ 1 đến " + n + " là: " + tongChan);
+      console.log("Tổng các số lẻ từ 1 đến " + n + " là: " + tongLe);
+    </script>
+  </body>
+</html>
