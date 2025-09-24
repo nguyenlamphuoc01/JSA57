@@ -1,0 +1,17 @@
+      body {
+          padding-top: 70px;
+      }
+
+      .time-slot {
+          border: 1px solid #ccc;
+          padding: 10px;
+          text-align: center;
+          border-radius: 8px;
+          background: #f8f9fa;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+
+      .time-slot:hover {
+          background: #e9ecef;
+      }
